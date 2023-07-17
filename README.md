@@ -1,6 +1,6 @@
 # Latent Vector Transformation for Disentanglement with Multiple Invertible and Partially Equivaraint Function in VAEs
 
-![ex_screenshot](./figs/overview.png)
+![ex_screenshot](./figs/overview.jpg)
 
 ## Abstract
 Disentanglement learning is a core issue for understanding and re-using trained information in Variational AutoEncoder (VAE), and effective inductive bias has been reported as a key factor.
