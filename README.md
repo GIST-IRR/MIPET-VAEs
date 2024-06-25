@@ -1,5 +1,7 @@
 # Latent Vector Transformation for Disentanglement with Multiple Invertible and Partially Equivaraint Function in VAEs
 
+Submmitted Article (IEEE) "This work has been submitted to the IEEE for possible publication. Copyright may be transferred without notice, after which this version may no longer be accessible" (2023. 05)
+
 ![ex_screenshot](./figs/overview.jpg)
 
 ## Abstract
