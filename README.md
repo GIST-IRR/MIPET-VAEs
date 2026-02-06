@@ -1,14 +1,15 @@
 # Latent Vector Transformation for Disentanglement with Multiple Invertible and Partially Equivaraint Function in VAEs
 
-Submmitted Article (IEEE) "This work has been submitted to the IEEE for possible publication. Copyright may be transferred without notice, after which this version may no longer be accessible" (2023. 05)
+Accepted at AISTATS 2026.
 
 ![ex_screenshot](./figs/overview.jpg)
 
 ## Abstract
-Disentanglement learning is a core issue for understanding and re-using trained information in Variational AutoEncoder (VAE), and effective inductive bias has been reported as a key factor.
-However, the actual implementation of such bias is still vague.
-In this paper, we propose a novel method, called *Multiple Invertible and partial-equivariant transformation* (MIPE-transformation), to inject inductive bias by 1) guaranteeing the invertibility of latent-to-latent vector transformation while preserving a certain portion of equivariance of input-to-latent vector transformation, called *Invertible and partial-equivariant transformation* (IPE-transformation), 2) extending the form of prior and posterior in VAE frameworks to an unrestricted form through a learnable conversion to an approximated exponential family, called *Exponential Family conversion* (EF-conversion), and 3) integrating multiple units of IPE-transformation and EF-conversion, and their training. 
-In experiments on 3D Cars, 3D Shapes, and dSprites datasets, MIPE-transformation improves the disentanglement performance of state-of-the-art VAEs.
+Disentanglement learning is central to understanding and reusing learned representations in variational autoencoders (VAEs). 
+Although equivariance has been explored in this context, effectively exploiting it for disentanglement remains challenging.
+In this paper, we propose a novel method, called *Multiple Invertible and Partial-Equivariant Transformation* (MIPE-Transformation), which integrates two main parts: 
+(1) *Invertible and Partial-Equivariant Transformation* (IPE-Transformation), guaranteeing an invertible latent-to–transformed-latent mapping while preserving partial input-to-latent equivariance in the transformed latent space; and (2) *Exponential-Family Conversion* (EF-Conversion) to extend the standard Gaussian prior to an approximate exponential family via a learnable conversion.
+In experiments on the 3D Cars, 3D Shapes, and dSprites datasets, MIPE-Transformation improves the disentanglement performance of state-of-the-art VAEs.
 
 ## Requirements
 
@@ -144,3 +145,4 @@ CUDA_VISIBLE_DEVICES=$DEVICE_IDX python $PYTHON_FILE \
 ## Contributing
 
 All contents in this repository is licensed under the MIT license.
+
